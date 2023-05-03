@@ -1,0 +1,10 @@
+Sure, here are the steps to implement the Factorization method for SfM in Python:
+
+    Load the images and convert them to grayscale.
+    Detect features in the first image using a feature detection algorithm such as SIFT or Harris corner detection.
+    Track the detected features in subsequent frames using a feature tracking algorithm such as KLT or Lucas-Kanade.
+    Filter out any outliers in the feature tracks using RANSAC or a similar algorithm.
+    Estimate the camera motion between frames using the filtered feature tracks and the known camera intrinsics.
+    Triangulate the 3D positions of the feature points using the estimated camera motion.
+    Refine the estimated 3D positions of the feature points using bundle adjustment.
+    Write the 3D coordinates of the triangulated points to a PLY file in ASCII format.
